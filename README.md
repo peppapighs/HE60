@@ -12,7 +12,7 @@ HE60 is a 60% Hall-effect keyboard PCB with a split spacebar, and a Tsangan layo
 ## Disclaimer
 
 - At the moment, only the gummy O-ring version with 1.2mm PCB thickness has been tested. Please proceed with caution if you are using the tray mount version.
-- The PCB requires standoffs to be mounted to the switch plate. The mounting points are **not compatible** with other available plates e.g., GEON Venom60 7u plate.
+- The PCB requires standoffs to be mounted to the switch plate. The mounting points are **not compatible** with other available plates e.g., GEON Venom60 7U plate.
 
 ## Supported Layouts
 
@@ -41,7 +41,7 @@ The following items are required to build the PCB:
 - M2 3.5mm standoffs x8 (available at [KBDfans](https://kbdfans.com/collections/other-accessories/products/kbdfans-m2-3-countersunk-flat-head-screw-kit), and [Taobao](https://item.taobao.com/item.htm?_u=d20ikgunaje547))
 - M2 3mm flat head screws x16
 
-1. Attach the standoffs to the PCB using the M2 screws.
+1. Attach the standoffs to the PCB using the M2 screws. **Warning: The position of the standoff above the spacebar in v1.0 will interfere with the 7U stabilizer. Consider removing it if you are using the 7U layout.**
 
 ![Standoff](/doc/1-standoff.jpg)
 
