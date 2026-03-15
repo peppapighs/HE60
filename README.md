@@ -27,12 +27,12 @@ The following files are required:
 
 Note that the components in the BOM are all mounted on the bottom side of the PCB, and are based on the available components in JLCPCB at the time of writing. You may need to adjust the components based on your preference or availability. For the JST connector (labeled `JST_SH`), I used `WAFER-SH1.0-4PWB` offered by JLCPCB. **Make sure to deselect the USB-C port when choosing the components to solder if you are using the gummy O-ring version.**
 
-You may change the Hall-effect sensors during the component selection based on your preference, and availability. Different sensors require different calibration values, which can be adjusted using the web-based configurator. Here are some options that I have used:
+You may change the Hall-effect sensors during the component selection based on your preference, and availability. Different sensors require different calibration values, which can be adjusted using the web-based configurator. Different sensors may also have different polarity, and may require output inversion. Here are some options that I have used:
 
-- GH39FKSW (Cheapest)
+- GH39FKSW (Cheapest, Inverted)
 - MT9102ET
 - SS39ET
-- DRV5055A3
+- DRV5055A3 (Inverted)
 - OH49E-S (Discontinued)
 
 The fabrication files above are available [here](https://github.com/peppapighs/HE60/releases).
@@ -67,6 +67,8 @@ The following items are required to build the PCB:
 ## Firmware
 
 Head to [libhmk](https://github.com/peppapighs/libhmk/releases) for a pre-compiled firmware. The firmware can be flashed using DFU mode, which can be entered by holding the BOOT button before plugging in. You may need to install the DFU bootloader driver using Zadig. See [libhmk](https://github.com/peppapighs/libhmk) for more information for firmware flashing instructions.
+
+**Important**: The firmware assumes the Hall-effect sensors are MT9102ET, which does not require output inversion. If you are using other sensors with different polarity, you may need to invert the output, configured by the flag `invert_adc` in [libhmk/keyboards/he60-v2/keyboard.json](https://github.com/peppapighs/libhmk/blob/main/keyboards/he60-v2/keyboard.json), and compile the firmware from source.
 
 ## Acknowledgements
 
