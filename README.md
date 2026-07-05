@@ -7,7 +7,7 @@ HE60 is a 60% Hall-effect keyboard PCB with 8kHz polling rate, a split spacebar 
 - Support for GH60 tray mount cases e.g., KBDfans Tofu60 Redux, and KBDfans Holy60.
 - Support for gummy O-ring mount cases **if the USB-C port is not soldered** e.g., Bakeneko60, and SingaKBD Unikorn (required 10mm JST cable).
 - [libhmk](https://github.com/peppapighs/libhmk) firmware.
-- [hmkconf](https://hmk.prasertsuk.com) web-based configurator.
+- [hmkconf](https://hmkconf.com/) web-based configurator.
 
 ## Disclaimer
 
